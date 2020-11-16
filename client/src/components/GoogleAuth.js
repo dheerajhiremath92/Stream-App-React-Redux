@@ -12,7 +12,7 @@ class GoogleAuth extends React.Component {
         //init --> sends a promise
         .init({
           clientId:
-            "488401239501-ttian3fv7phhu6iq0pkmfihi6tkpr5a7.apps.googleusercontent.com",
+            "##########",
           scope: "email",
         })
         .then(() => {
