@@ -4,6 +4,6 @@ import authReducer from "./authReducer";
 import streamReducer from "./streamReducer";
 export default combineReducers({
   auth: authReducer,
-  form: formReducer,
+  form: formReducer, //--> This reducer is automatically created by redux-form
   streams: streamReducer,
 });

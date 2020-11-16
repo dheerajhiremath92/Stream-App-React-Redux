@@ -1,19 +1,22 @@
 {
   "streams": [
     {
-      "title": "thh",
-      "description": "thth",
+      "title": "New york city tour",
+      "description": "enjoy the city tour of New York with Halsey and Dheeraj",
+      "userId": "110928236490416265699",
       "id": 1
     },
     {
-      "title": "thhyj",
-      "description": "ththjyj  yjyjyj ",
-      "id": 2
+      "title": "HUbli",
+      "description": "Benki",
+      "userId": "110928236490416265699",
+      "id": 7
     },
     {
-      "title": "thhyj",
-      "description": "ththjyj  yjyjyj ",
-      "id": 3
+      "title": "ty7i",
+      "description": "ytiti",
+      "userId": "116869069647796112826",
+      "id": 8
     }
   ]
 }

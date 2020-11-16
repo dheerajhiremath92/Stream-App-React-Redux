@@ -4,8 +4,12 @@ import { signIn, signOut } from "../actions";
 class GoogleAuth extends React.Component {
   /* initialise only OAuth  library */
   componentDidMount() {
+    //Load the library for once to use the libray
+
     window.gapi.load("client:auth2", () => {
       window.gapi.client
+        //callback --> https://developers.google.com/identity/sign-in/web/reference#authentication
+        //init --> sends a promise
         .init({
           clientId:
             "488401239501-ttian3fv7phhu6iq0pkmfihi6tkpr5a7.apps.googleusercontent.com",
@@ -20,7 +24,7 @@ class GoogleAuth extends React.Component {
   }
   onAuthChange = (isSignedIn) => {
     if (isSignedIn) {
-      this.props.signIn(this.auth.currentUser.get().getId());
+      this.props.signIn(this.auth.currentUser.get().getId()); // --> sending details to index.js of Actions 
     } else {
       this.props.signOut();
     }
@@ -35,6 +39,7 @@ class GoogleAuth extends React.Component {
     if (this.props.isSignedIn === null) {
       return null;
     } else if (this.props.isSignedIn) {
+
       return (
         <button onClick={this.onSignOutClick} className="ui red google button">
           <i className="google icon" />
